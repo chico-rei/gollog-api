@@ -119,7 +119,7 @@ class SalesApi
      */
     public function quotationCalculateQuotationWithHttpInfo($company_key, $model)
     {
-        $returnType = '\Swagger\Client\Model\QuotationResponse';
+        $returnType = '\Swagger\Client\Model\QuotationResponse[]';
         $request = $this->quotationCalculateQuotationRequest($company_key, $model);
 
         try {
@@ -215,7 +215,7 @@ class SalesApi
      */
     public function quotationCalculateQuotationAsyncWithHttpInfo($company_key, $model)
     {
-        $returnType = '\Swagger\Client\Model\QuotationResponse';
+        $returnType = '\Swagger\Client\Model\QuotationResponse[]';
         $request = $this->quotationCalculateQuotationRequest($company_key, $model);
 
         return $this->client
